@@ -4,8 +4,9 @@ date: 2025-10-03
 description: "手把手教你如何使用 Hugo + PaperMod + GitHub Pages + 自定义域名，打造一个样式美观、Google 搜索引擎友好的技术博客。"
 tags: ["Hugo", "GitHub Pages", "SEO", "技术博客"]
 categories: ["Blog"]
+draft: false
 cover:
-  image: "/cover.jpg"
+  # image: "/cover.jpg"
   alt: "Hugo + GitHub Pages 博客封面"
 ---
 

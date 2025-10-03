@@ -1,12 +1,15 @@
 baseURL = 'https://blog.chenghu.me/'
-title = "Sam的日常博客"
+title = "Sam的博客"
 languageCode = "zh-cn"
 hasCJKLanguage = true
-paginate = 10
+# paginate = 10
+pagerSize = 10
 # 生产构建时请使用 hugo --minify
 enableRobotsTXT = true
+theme = "PaperMod"
 
 [params]
+  mainSections = ["posts"]
   # 站点描述（会用于 meta description）
   description = "iOS/Android/RN/KMP/DevOps等实战记录与技术洞见"
   author = "chenghu"
@@ -22,6 +25,9 @@ enableRobotsTXT = true
   ShowBreadCrumbs = true
   ShowToc = true
   TocOpen = false
+
+[pagination]
+  pagerSize = 10
 
 # 生成 sitemap.xml（Hugo 默认已内置）
 [sitemap]
