@@ -1,0 +1,55 @@
+baseURL = 'https://blog.chenghu.me/'
+title = "Sam的日常博客"
+languageCode = "zh-cn"
+hasCJKLanguage = true
+paginate = 10
+# 生产构建时请使用 hugo --minify
+enableRobotsTXT = true
+
+[params]
+  # 站点描述（会用于 meta description）
+  description = "iOS/Android/RN/KMP/DevOps等实战记录与技术洞见"
+  author = "chenghu"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  defaultTheme = "auto" # 支持 light/dark
+
+  # Open Graph / Twitter Cards
+  images = ["cover.jpg"]
+
+  # 面包屑、目录等有助于结构化理解
+  ShowBreadCrumbs = true
+  ShowToc = true
+  TocOpen = false
+
+# 生成 sitemap.xml（Hugo 默认已内置）
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# 各类输出（HTML/RSS）
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Canonical 链接
+[permalinks]
+  posts = "/posts/:slug/"
+
+# 多语言（可选：中/日/英）
+# [languages]
+#   [languages.zh-cn]
+#     languageName = "简体中文"
+#     weight = 1
+#   [languages.ja]
+#     languageName = "日本語"
+#     weight = 2
+
+# Google Analytics（可选，GA4）
+[params.analytics.google]
+  SiteVerificationTag = "在Google Search Console的验证值" # 便于站长验证
+
+# 自定义 head（放 JSON-LD 结构化数据）
+[params.assets]
+  disableFingerprinting = false
